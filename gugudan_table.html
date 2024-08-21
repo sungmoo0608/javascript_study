@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.document.write("<table border=1>");
+        window.document.write("<tr>");
+        for (let i = 1; i <= 9; i++) {
+            window.document.write("<td>");
+            window.document.write(i + "단 출력");
+            window.document.write("</td>");
+        }
+        window.document.write("</tr>");
+
+        for (let i = 1; i <= 9; i++) {
+            window.document.write("<tr>");
+            for (let j = 1; j <= 9; j++) {
+                window.document.write("<td>");
+                window.document.write(j + "*" + i + "=" + (i * j));
+                window.document.write("</td>");
+            }
+            window.document.write("</tr>");
+        }
+        window.document.write("</table>");
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
