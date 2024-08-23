@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 함수 생성*/
+
+        // 명시(선언)적 함수 생성
+
+        function funName(x,y,z){
+            document.write("x : " + x + "<br>")
+            document.write("y : " + y + "<br>")
+            document.write("z : " + z + "<br>")
+
+            var result = x + y + z;
+            return result;
+        }
+
+        // 익명 함수
+        const funAnomyous = function(){
+            document.write("익명 함수입니다."+"<br>")
+        }
+
+        let result = 0 ;
+        result = funName(2,3,5);
+
+        result = funName(2,3,5,7);
+
+        result = funName(2,3);
+
+        document.write(result + "<br>")
+
+        // funName();
+        // funAnomyous();
+
+        // document.write(typeof(funAnomyous)+"<br>")
+        // document.write(typeof(funName)+"<br>")
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

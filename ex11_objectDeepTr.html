@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 연습문제1
+        function Grade(kor, eng, math){
+            this.kor = kor;
+            this.eng = eng;
+            this.math = math;
+            this.getTotal = function() {
+                return this.eng + this.kor + this.math;
+            },
+            this.getAvg = function() {
+                return this.getTotal() / 3.0;
+            }
+        };
+
+        let grade = new Grade(90,60,70);
+        document.write(grade.getAvg()+"<br>")
+        document.write(grade.getTotal()+"<br>")
+    </script>
+    <script>
+        // 연습문제2
+        function Recangle(width, height){
+            this.width = width;
+            this.height = height;
+            this.getArea = function() {
+                return this.width*this.height;
+            }
+        };
+
+        let rec = new Recangle(10,10);
+        document.write(rec.getArea()+"<br>")
+    </script>
+    <script>
+        //  연습문제3 
+        function Circle(radius){
+            this.radius = radius;
+            this.getArea = function(){
+                return this.radius*this.radius*Math.PI;
+            }
+        };
+
+        let circle = new Circle(10);
+        document.write(circle.getArea()+"<br>")
+    </script>
+
+</head>
+<body>
+</body>
+</html>

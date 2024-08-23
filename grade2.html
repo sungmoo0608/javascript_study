@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let kor = prompt("국어","점수를 입력하세요");
+        let eng = prompt("영어","점수를 입력하세요");
+        let math = prompt("수학","점수를 입력하세요");
+
+        let total = (Number(kor) + Number(eng) + Number(math));
+
+        let avg = total / 3.0;
+
+        const funKorEngMath = function(){
+            window.document.write("국어 : " + kor + "<br>");
+            window.document.write("영어 : " + eng + "<br>");
+            window.document.write("수학 : " + math + "<br>");
+        }
+
+        const funTotal = function(){
+            window.document.write("총점 : " + total + "<br>");
+        }
+
+        const funAvg = function(){
+            window.document.write("평균 : " + avg + "<br>");
+        }
+
+        const funGrade = function(){
+            if(avg >= 90) {
+                window.document.write(" 수 입니다." + "<br>");
+            } else if (avg >= 80) {
+                window.document.write(" 우 입니다." + "<br>");
+            } else if (avg >= 70) {
+                window.document.write(" 미 입니다." + "<br>");
+            } else if (avg >= 60) {
+                window.document.write(" 양 입니다." + "<br>");
+            } else {
+                window.document.write(" 가 입니다." + "<br>");
+            };
+        }
+
+        funKorEngMath();
+        funTotal();
+        funAvg();
+        funGrade();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
