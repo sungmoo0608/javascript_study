@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+
+            let upBtn = document.querySelector("#up");
+            let downBtn = document.querySelector("#down");
+
+            let qunInput = document.querySelector("#quantity");
+
+            upBtn.addEventListener("click",function(){
+                let count = qunInput.value;
+                qunInput.value = Number(count)+1;
+            });
+
+            downBtn.addEventListener("click",function(){
+                let count = qunInput.value;
+                if( count != 0) {
+                qunInput.value = Number(count)-1;
+            }
+            });
+
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        갯수 : <input type="text" id="quantity" name="quantity" value="0" />
+        <button id="up">+</button>
+        <button id="down">-</button>
+    </div>
+</body>
+
+</html>
